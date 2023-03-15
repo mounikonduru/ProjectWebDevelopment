@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="nav.js"></script>
+    <script defer src="previous.js"></script>
     <title>Mounish konduru Portfolio</title>
   </head>
   <body>
@@ -38,20 +39,68 @@
       <section class="about">
         <img class="MyImage" src="./images/Mounisha.jpg" />
         <div class="AboutContent">
-            <h1 class="AboutHead">About Me!</h1>
-            <h2 class="AboutIntro">I am Mounisha Konduru</h2>
-            <p class="AboutPara">
-              I am currently pursuing masters in computer science at Portland
-              State University. I am interested in multiple tracks including
-              software engineering, Machine learning, Business management and
-              psychology. My personal project is about credit card fraud
-              detection. I have done several projects that are linked in the
-              below. I love cooking and I also listen to the songs and watch
-              movies a lot when I get a free time.
-            </p>
-            <button class="AboutButton" type="button">
-              Want To Know More!
-            </button>
+          <h1 class="AboutHead">About Me!</h1>
+          <h2 class="AboutIntro">I am Mounisha Konduru</h2>
+          <p class="AboutPara">
+            I am currently pursuing masters in computer science at Portland
+            State University. I am interested in multiple tracks including
+            software engineering, Machine learning, Business management and
+            psychology. My personal project is about credit card fraud
+            detection. I have done several projects that are linked in the
+            below. I love cooking and I also listen to the songs and watch
+            movies a lot when I get a free time.
+          </p>
+          <button class="AboutButton" type="button">Want To Know More!</button>
+        </div>
+      </section>
+
+      <section class="Previous_page">
+        <h2 class="page_title">Previous Work</h2>
+        <div class="Previous">
+          <div class="PrevContainer">
+            <div class="PrevBtns">
+              <div class="PrevBtn unhide" onclick="unhideContent(this,'main1')">
+                Work Experience
+              </div>
+              <div class="PrevBtn unhide" onclick="unhideContent(this,'main2')">
+                Education
+              </div>
+              <div class="PrevBtn unhide" onclick="unhideContent(this,'main3')">
+                Course Work
+              </div>
+            </div>
+            <div class="PrevContents">
+              <div class="MainContent" id="main1">
+                <h2>Work Experience</h2>
+                <p>
+                  I worked as a software engineer at Tech Mahindra Company in
+                  pune, India. I used to work as a software developer, I used to
+                  handle unit testing. As a software developer, its important to
+                  ensure that your code is functioning correctly and meets the
+                  requirements set out in the project specifications. I
+                  supported the production department once your code has been
+                  developed and tested. It's time to deploy it to production.
+                </p>
+              </div>
+              <div class="MainContent" id="main2">
+                <h2>Education</h2>
+                <p>
+                  Currently pursuing my Master's in Computer Science at Portland
+                  State University. Completed my Bachelor of Engineering in
+                  Sathyabama Institute Of Science and Technology with 8.4 CGPA
+                  at Chennai.
+                </p>
+              </div>
+              <div class="MainContent" id="main3">
+                <h2>Course Work</h2>
+                <p>
+                  In Last term I completed DBMS , Internetworking Protocol,
+                  Operating Systems. In this term currently doing Voice
+                  Assistant, Intro To Web and Algorithm and Design.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
