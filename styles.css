@@ -38,6 +38,7 @@
   overflow: hidden;
   position: fixed;
   top: 0%;
+  z-index: 1000;
 }
 
 .name {
@@ -146,7 +147,7 @@
 }
 
 .AboutContent h1 {
-  color: burlywood;
+  color: #3f0f51;
   font-size: 40px;
   margin-bottom: 25px;
 }
@@ -260,4 +261,50 @@
   .MainContent p {
     font-size: 10px;
   }
+}
+
+.ProjectFlex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.ProLayout {
+  border: 2px dotted black;
+  padding: 5px;
+  width: 300px;
+  margin: 50px;
+}
+
+.ProPic img {
+  width: 100%;
+  height: 300px;
+}
+
+.ProjectData h2 {
+  text-align: center;
+}
+
+.ProjectData p {
+  text-align: justify;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.ProjectBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectBtn button {
+  width: 150px;
+  background: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 6px;
+  font-size: 17px;
+  cursor: pointer;
 }
