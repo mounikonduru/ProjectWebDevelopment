@@ -3,10 +3,28 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "futura md bt";
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --black: #080808;
+  --teal: #006060;
+  --lightteal: #008080;
+  --purple: #800080;
+  --navy: #000080;
+  --cyan: #17a2b8;
+  --violetred: #c71585;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #006400;
 }
 
 .head {
@@ -99,5 +117,60 @@
   .NavFlex {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: 150px auto;
+}
+
+.about img {
+  flex: 0 50%;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.AboutContent {
+  padding: 40px;
+}
+
+.AboutContent h1 {
+  color: burlywood;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.AboutContent h2 {
+  color: lightcoral;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.AboutContent p {
+  font-size: 18px;
+}
+
+.AboutButton {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about img {
+    flex: 0 100px;
   }
 }
