@@ -153,7 +153,7 @@
 }
 
 .AboutContent h2 {
-  color: lightcoral;
+  color: rgb(245, 85, 85);
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -228,8 +228,9 @@
 }
 
 .PrevBtn {
+  display: block;
   text-align: center;
-  padding: 20px 5px;
+  padding: 20px 60px;
   margin-top: 50px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -287,7 +288,6 @@
 }
 
 .ProjectData p {
-  text-align: justify;
   margin-bottom: 10px;
   padding: 5px;
 }
@@ -298,7 +298,7 @@
   align-items: center;
 }
 
-.ProjectBtn button {
+.ProjectBtn a {
   width: 150px;
   background: black;
   color: white;
@@ -307,4 +307,47 @@
   padding: 6px;
   font-size: 17px;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.contact {
+  margin-top: 100px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.form_input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 40px;
+  outline: none;
+  color: #000;
+}
+.form_label {
+  font-weight: bold;
+  font-size: 22px;
+}
+textarea.form_input {
+  resize: none;
+  height: 120px;
+}
+.SubmitBtn {
+  float: right;
+  background-color: rgb(172, 239, 246);
+  color: #000;
+  padding: 12px 50px;
+  cursor: pointer;
+  transition: 0.5s;
 }

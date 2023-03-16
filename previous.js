@@ -1,7 +1,7 @@
 function unhideContent(over, id) {
-    var Buttons = document.querySelectorAll('.PrevBtn');
-    var MainContent = document.querySelectorAll('.MainContent');
-    var i = 0;
+    let Buttons = document.querySelectorAll('.PrevBtn');
+    let MainContent = document.querySelectorAll('.MainContent');
+    let i = 0;
     while (i < Buttons.length) {
         Buttons[i].classList.remove('unhide');
         MainContent[i].classList.remove('unhide');

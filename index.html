@@ -29,7 +29,7 @@
             <a class="NavLink" href="#projectslink">Projects</a>
           </li>
           <li class="NavItem">
-            <a class="NavLink" href="#">Contact</a>
+            <a class="NavLink" href="#contactme">Contact</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +37,11 @@
 
     <main>
       <section class="about" id="aboutlink">
-        <img class="MyImage" src="./images/Mounisha.jpg" />
+        <img
+          class="MyImage"
+          src="./images/Mounisha.jpg"
+          alt="Picture of Mounisha Standing in Snow"
+        />
         <div class="AboutContent">
           <h1 class="AboutHead">About Me!</h1>
           <h2 class="AboutIntro">I am Mounisha Konduru</h2>
@@ -59,15 +63,24 @@
         <div class="Previous">
           <div class="PrevContainer">
             <div class="PrevBtns">
-              <div class="PrevBtn unhide" onclick="unhideContent(this,'main1')">
+              <button
+                class="PrevBtn unhide"
+                onclick="unhideContent(this,'main1')"
+              >
                 Work Experience
-              </div>
-              <div class="PrevBtn unhide" onclick="unhideContent(this,'main2')">
+              </button>
+              <button
+                class="PrevBtn unhide"
+                onclick="unhideContent(this,'main2')"
+              >
                 Education
-              </div>
-              <div class="PrevBtn unhide" onclick="unhideContent(this,'main3')">
+              </button>
+              <button
+                class="PrevBtn unhide"
+                onclick="unhideContent(this,'main3')"
+              >
                 Course Work
-              </div>
+              </button>
             </div>
             <div class="PrevContents">
               <div class="MainContent" id="main1">
@@ -108,7 +121,10 @@
         <div class="ProjectFlex">
           <div class="ProLayout">
             <div class="ProPic">
-              <img src="./images/ipproject.jpeg" />
+              <img
+                src="./images/ipproject.jpeg"
+                alt="Picture containing Networking logo"
+              />
             </div>
             <div class="ProjectData">
               <h2 class="projectHead">Internetworking Protocol</h2>
@@ -128,12 +144,17 @@
               </p>
             </div>
             <div class="ProjectBtn">
-              <button>Github Link</button>
+              <a href="https://github.com/mounikonduru/Internet-Relay-Chat"
+                >Github Link</a
+              >
             </div>
           </div>
           <div class="ProLayout">
             <div class="ProPic">
-              <img src="./images/database.jpeg" />
+              <img
+                src="./images/database.jpeg"
+                alt="Picture containing DataBase Managament System Logo"
+              />
             </div>
             <div class="ProjectData">
               <h2 class="projectHead">Database management Systems</h2>
@@ -154,10 +175,31 @@
               </p>
             </div>
             <div class="ProjectBtn">
-              <button>Github Link</button>
+              <a href="https://github.com/mounikonduru/DBMS_PROJECT"
+                >Github Link</a
+              >
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="contact" id="contactme">
+        <h2 class="page_title">Contact Me</h2>
+        <form id="form" class="form" action="/submit" method="post">
+          <div class="contact_sections">
+            <label class="form_label" for="username">Name</label>
+            <input type="text" class="form_input" id="username" />
+          </div>
+          <div class="contact_sections">
+            <label class="form_label" for="email">Email</label>
+            <input id="email" type="email" class="form_input" />
+          </div>
+          <div class="contact_sections">
+            <label class="form_label" for="text">Message</label>
+            <textarea id="text" class="form_input"></textarea>
+          </div>
+          <input type="submit" class="SubmitBtn" value="submit" />
+        </form>
       </section>
     </main>
   </body>
