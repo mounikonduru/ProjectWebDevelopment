@@ -1,30 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Sono:wght@700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-}
-
-:root {
-  --white: #ffffff;
-  --gray1: #333333;
-  --gray2: #555555;
-  --gray3: #cccccc;
-  --gray4: #aaaaaa;
-
-  --black: #080808;
-  --teal: #006060;
-  --lightteal: #008080;
-  --purple: #800080;
-  --navy: #000080;
-  --cyan: #17a2b8;
-  --violetred: #c71585;
-  --red: #ff0000;
-  --orange: #ffa500;
-  --green: #006400;
 }
 
 .head {
@@ -56,6 +35,7 @@
   color: #000;
   padding: 5px 0;
   margin: 0 10px;
+  font-weight: bold;
   border: 3px solid transparent;
   text-transform: uppercase;
   transition: 0.2s;
@@ -75,8 +55,6 @@
 @media only screen and (max-width: 700px) {
   .ButtonClick {
     visibility: visible;
-  }
-  .ButtonClick {
     font-size: 30px;
     background-color: transparent;
     border: none;
@@ -146,19 +124,19 @@
   padding: 40px;
 }
 
-.AboutContent h1 {
+.AboutHead {
   color: #3f0f51;
   font-size: 40px;
   margin-bottom: 25px;
 }
 
-.AboutContent h2 {
+.AboutIntro {
   color: rgb(245, 85, 85);
   font-size: 30px;
   margin-bottom: 20px;
 }
 
-.AboutContent p {
+.AboutPara {
   font-size: 18px;
 }
 
@@ -178,7 +156,7 @@
   .about {
     flex-direction: column;
   }
-  .about img {
+  .MyImage {
     flex: 0 100px;
   }
 }
@@ -204,12 +182,12 @@
   flex-basis: 30%;
   padding: 10px;
   background-color: rgb(13, 14, 13);
-  border-radius: 10px solid;
+  border-radius: 10px;
 }
 
 .PrevContents {
   flex-basis: 70%;
-  background-color: rgb(172, 239, 246);
+  background-color: rgb(221, 241, 246);
   padding: 20px 30px 20px 40px;
   font-size: 20px;
 }
@@ -228,10 +206,10 @@
 }
 
 .PrevBtn {
-  display: block;
   text-align: center;
-  padding: 20px 60px;
+  padding: 20px 5px;
   margin-top: 50px;
+  width: 100%;
   margin-bottom: 10px;
   font-size: 20px;
   border-radius: 10%;
@@ -246,10 +224,14 @@
 @media (max-width: 768px) {
   .MainContent h2 {
     font-size: 20px;
+    margin-top: 0;
   }
 
   .MainContent p {
     font-size: 14px;
+  }
+  .PrevBtn {
+    margin-top: 15px;
   }
 }
 
@@ -345,9 +327,10 @@ textarea.form_input {
 }
 .SubmitBtn {
   float: right;
-  background-color: rgb(172, 239, 246);
-  color: #000;
+  background-color: rgb(14, 16, 17);
+  color: #f2e9e9;
   padding: 12px 50px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.5s;
 }

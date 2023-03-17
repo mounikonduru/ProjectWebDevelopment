@@ -1,8 +1,8 @@
-function OpenClose() {
-  let navmenu = document.getElementById("menu");
-  if (navmenu.className === "list") {
-    navmenu.className += " show";
+const OpenClose = () => {
+  const navmenu = document.getElementById("menu");
+  if (navmenu.classList.contains("show")) {
+    navmenu.classList.remove("show");
   } else {
-    navmenu.className = "list";
+    navmenu.classList.add("show");
   }
 }
